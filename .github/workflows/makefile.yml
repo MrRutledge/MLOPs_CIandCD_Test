@@ -1,11 +1,6 @@
-name: Makefile CI
+name: Azure Python 3.8
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
+on: [push]
 jobs:
   build:
 
@@ -14,14 +9,18 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    - name: configure
-      run: ./configure
-      
+    - name: Set up Python 3.8
+      uses: action/setup-python@v1
+      with: 
+        python-version: 3.8
     - name: Install dependencies
-      run: make
-      
-    - name: Run check
-      run: make check
-      
-    - name: Run distcheck
-      run: make distcheck
+      run: |
+        make install
+    - run: |
+        make lint
+    - name: Test
+      run: |
+        make test
+        
+       
+    
