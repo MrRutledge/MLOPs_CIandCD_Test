@@ -1,8 +1,8 @@
 install:
 	pip install --upgrade pip &&\
-	pip install -r requirements.txt
+	   pip install -r requirements.txt
 lint: 
-	pylint -- diable=R,C *.py
+	pylint --disable=R,C hello.py
 
 test:	
 	python -m pytest -vv --cov=hello.py test_hello.py
