@@ -1,7 +1,3 @@
-"""x = [5, 10, 13]"""
-"""y = 8"""
-
-
 def add(x,y):
     """This is an add functio"""
     return x+y 
@@ -14,9 +10,8 @@ def sub(x,y):
 
 print(sub(3,5))
 
-"""def mult(x,y):"""
-"""This is a Multiplication func"""
+def mult(x,y):
+    """This is a Sub func"""
+    return x*y
 
-""" return x*y"""
-
-"""print(mult(x,y))"""
+print(mult(9,5))
