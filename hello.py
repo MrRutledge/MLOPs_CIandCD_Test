@@ -22,23 +22,3 @@ def div(x,y):
 
 print(div(4,2))
 
-def square(x,y):
-    """Square func"""
-
-    return x**y
-
-print(square(2,9))
-
-def square(x,y):
-    
-
-    return x/y
-
-print(square(2,9))
-
-def square(x,y):
-    
-
-    return x>y
-
-print(square(2,9))
