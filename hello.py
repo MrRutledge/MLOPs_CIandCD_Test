@@ -17,7 +17,7 @@ def mult(x,y):
 print(mult(9,5))
 
 def div(x,y):
-    """Div func"""
+    """Div function"""
     return x/y
 
 print(div(4,2))
